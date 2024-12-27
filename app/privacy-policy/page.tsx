@@ -1,7 +1,9 @@
+import MainLayout from "@/components/layout/layout";
 
 const PrivacyPolicyPage = () => {
   return (
-    <div className="bg-gray-50 min-h-screen px-8 py-12">
+    <MainLayout>
+      <div className="bg-gray-50 min-h-screen px-8 py-12">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-800 text-center mb-8">
           Privacy Policy
@@ -93,6 +95,7 @@ const PrivacyPolicyPage = () => {
         </div>
       </div>
     </div>
+    </MainLayout>
   );
 };
 
