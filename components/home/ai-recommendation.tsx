@@ -2,12 +2,45 @@
 
 import { useRouter } from 'next/navigation';
 
+const perfumeData = [
+    {
+        "id": 1,
+        "imageUrl": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "title": "Chanel No. 5 Eau de Parfum",
+        "discount": "Up to 20% off",
+        "rating": 4.8,
+        "reviews": 5678,
+        "isBestSeller": true,
+        "price": "$150"
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "title": "Dior Sauvage Eau de Toilette",
+        "discount": "Up to 15% off",
+        "rating": 4.7,
+        "reviews": 4321,
+        "isBestSeller": false,
+        "price": "$130"
+    },
+    {
+        "id": 3,
+        "imageUrl": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "title": "Tom Ford Black Orchid Eau de Parfum",
+        "discount": "Up to 10% off",
+        "rating": 4.9,
+        "reviews": 2345,
+        "isBestSeller": true,
+        "price": "$200"
+    }
+];
+
 export default function AIRecommendations() {
 
     const router = useRouter();
 
     const handleButtonClick = () => {
-      router.push('/custom-ai-recommend');
+        router.push('/custom-ai-recommend');
     };
 
     return (
@@ -27,7 +60,11 @@ export default function AIRecommendations() {
                 >
                     Get AI Recommendation
                 </button>
+
+
+
             </section>
+           
         </>
     )
 }
