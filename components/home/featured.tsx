@@ -42,7 +42,7 @@ export default function Featured() {
             <section className="p-6">
                 <h2 className="text-3xl font-semibold">Featured Products</h2>
                 <div className="flex flex-col gap-6 items-end">
-                    <div><Link href="/shop-now">Show more</Link></div>
+                    <div><Link href="/shop-now" className="hover:underline">Show more</Link></div>
                     <div className="flex gap-4 flex-wrap">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             {perfumeData.map((card:any) => (
