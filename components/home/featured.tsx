@@ -46,7 +46,7 @@ export default function Featured() {
                     <div className="flex gap-4 flex-wrap">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             {perfumeData.map((card:any) => (
-                                <div key={card.id} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                <div key={card.id} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
                                     <div className="h-56 w-full">
                                         <a href="#">
                                             <img className="mx-auto h-full dark:hidden" src={card.imageUrl} alt="" />
@@ -56,7 +56,7 @@ export default function Featured() {
 
                                     <div className="pt-6">
                                         <div className="mb-4 flex items-center justify-between gap-4">
-                                            <span className="me-2 rounded bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">
+                                            <span className="me-2 rounded bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800">
                                                 {card.discount}
                                             </span>
 
@@ -66,7 +66,7 @@ export default function Featured() {
                                                     data-tooltip-target="tooltip-quick-look"
                                                     className="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                                                 >
-                                                    <span className="sr-only">Quick look</span>
+                                                    <span className="sr-only text-gray-800">Quick look</span>
                                                     <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z" />
                                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -78,7 +78,7 @@ export default function Featured() {
                                                     data-tooltip-target="tooltip-add-to-favorites"
                                                     className="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                                                 >
-                                                    <span className="sr-only">Add to Favorites</span>
+                                                    <span className="sr-only text-gray-800">Add to Favorites</span>
                                                     <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
                                                     </svg>
@@ -86,7 +86,7 @@ export default function Featured() {
                                             </div>
                                         </div>
 
-                                        <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">
+                                        <a href="#" className="text-lg font-semibold leading-tight text-gray-800 hover:underline">
                                             {card.title}
                                         </a>
 
@@ -99,7 +99,7 @@ export default function Featured() {
                                                     </svg>
                                                 ))}
                                             </div>
-                                            <p className="text-sm font-medium text-gray-900 dark:text-white">{card.rating}</p>
+                                            <p className="text-sm font-medium text-gray-700">{card.rating}</p>
                                             <p className="text-sm font-medium text-gray-500 dark:text-gray-400">({card.reviews})</p>
                                         </div>
 
@@ -114,7 +114,7 @@ export default function Featured() {
                                             )}
                                         </ul>
 
-                                        <p className="text-lg font-semibold text-gray-900 dark:text-white">{card.price}</p>
+                                        <p className="text-lg font-semibold text-gray-700">{card.price}</p>
                                     </div>
                                 </div>
                             ))}

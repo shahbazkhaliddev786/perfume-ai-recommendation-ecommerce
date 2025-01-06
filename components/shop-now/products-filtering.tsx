@@ -15,6 +15,7 @@ import {
 } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const sortOptions = [
     { name: 'Most Popular', href: '#', current: true },
@@ -511,6 +512,7 @@ export default function ProductsFiltering() {
                             <div className="lg:col-span-3">
                                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                                     {perfumes.map((perfume) => (
+                                      <Link href="/product-detail">
                                         <div
                                             key={perfume.id}
                                             className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm"
@@ -607,9 +609,9 @@ export default function ProductsFiltering() {
                                                 </div>
                                             </div>
                                         </div>
+                                      </Link>
                                     ))}
                                 </div>
-
                             </div>
                         </div>
                     </section>

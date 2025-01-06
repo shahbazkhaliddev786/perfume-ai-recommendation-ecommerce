@@ -363,7 +363,6 @@ export default function Header() {
                   </Link>
                 </div>
 
-
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
                   <Link href="/cart" className="group -m-2 flex items-center p-2">
