@@ -50,27 +50,27 @@ const filters = [
             { value: 'accessories', label: 'Accessories', checked: false },
         ],
     },
-    {
-        id: 'size',
-        name: 'Size',
-        options: [
-            { value: '2l', label: '2L', checked: false },
-            { value: '6l', label: '6L', checked: false },
-            { value: '12l', label: '12L', checked: false },
-            { value: '18l', label: '18L', checked: false },
-            { value: '20l', label: '20L', checked: false },
-            { value: '40l', label: '40L', checked: true },
-        ],
-    },
+    // {
+    //     id: 'size',
+    //     name: 'Size',
+    //     options: [
+    //         { value: '2l', label: '2L', checked: false },
+    //         { value: '6l', label: '6L', checked: false },
+    //         { value: '12l', label: '12L', checked: false },
+    //         { value: '18l', label: '18L', checked: false },
+    //         { value: '20l', label: '20L', checked: false },
+    //         { value: '40l', label: '40L', checked: true },
+    //     ],
+    // },
 ]
 
 const perfumes = [
     {
         "id": 1,
-        "name": "Chanel No. 5 Eau de Parfum",
+        "name": "Envision",
         "brand": "Chanel",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/1.jpg",
+        "imageDark": "/1.jpg",
         "notes": ["Floral", "Citrus", "Vanilla"],
         "gender": "Unisex",
         "price": "$120",
@@ -80,10 +80,10 @@ const perfumes = [
     },
     {
         "id": 2,
-        "name": "Dior Sauvage Eau de Toilette",
+        "name": "Ambassador",
         "brand": "Dior",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/2.jpg",
+        "imageDark": "/2.jpg",
         "notes": ["Spicy", "Woody", "Amber"],
         "gender": "Male",
         "price": "$110",
@@ -93,10 +93,10 @@ const perfumes = [
     },
     {
         "id": 3,
-        "name": "Gucci Bloom Eau de Parfum",
+        "name": "Aurum Noir",
         "brand": "Gucci",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/3.jpg",
+        "imageDark": "/3.jpg",
         "notes": ["Jasmine", "Rangoon Creeper", "Tuberose"],
         "gender": "Female",
         "price": "$135",
@@ -106,10 +106,10 @@ const perfumes = [
     },
     {
         "id": 4,
-        "name": "Versace Eros Eau de Toilette",
+        "name": "Voyage",
         "brand": "Versace",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/4.jpg",
+        "imageDark": "/4.jpg",
         "notes": ["Mint", "Green Apple", "Vanilla"],
         "gender": "Male",
         "price": "$95",
@@ -119,10 +119,10 @@ const perfumes = [
     },
     {
         "id": 5,
-        "name": "Yves Saint Laurent Black Opium",
+        "name": "Noble Notes",
         "brand": "Yves Saint Laurent",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/5.jpg",
+        "imageDark": "/5.jpg",
         "notes": ["Coffee", "Vanilla", "Cedarwood"],
         "gender": "Female",
         "price": "$115",
@@ -132,10 +132,10 @@ const perfumes = [
     },
     {
         "id": 6,
-        "name": "Tom Ford Oud Wood Eau de Parfum",
+        "name": "Mistique",
         "brand": "Tom Ford",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/6.jpg",
+        "imageDark": "/6.jpg",
         "notes": ["Oud", "Sandalwood", "Cardamom"],
         "gender": "Unisex",
         "price": "$250",
@@ -145,10 +145,10 @@ const perfumes = [
     },
     {
         "id": 7,
-        "name": "Jo Malone London English Pear & Freesia",
+        "name": "Opulent",
         "brand": "Jo Malone",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/7.jpg",
+        "imageDark": "/7.jpg",
         "notes": ["Pear", "Freesia", "Amber"],
         "gender": "Unisex",
         "price": "$140",
@@ -158,10 +158,10 @@ const perfumes = [
     },
     {
         "id": 8,
-        "name": "Armani Code Eau de Parfum",
+        "name": "Mighty",
         "brand": "Armani",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/8.jpg",
+        "imageDark": "/8.jpg",
         "notes": ["Lavender", "Tonka Bean", "Cedarwood"],
         "gender": "Male",
         "price": "$100",
@@ -171,98 +171,18 @@ const perfumes = [
     },
     {
         "id": 9,
-        "name": "Dolce & Gabbana Light Blue",
+        "name": "Aristo",
         "brand": "Dolce & Gabbana",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageLight": "/9.jpg",
+        "imageDark": "/9.jpg",
         "notes": ["Citrus", "Apple", "Cedar"],
         "gender": "Female",
         "price": "$90",
         "rating": 4.8,
         "reviews": 1103,
         "discount": 8
-    },
-    {
-        "id": 10,
-        "name": "Creed Aventus",
-        "brand": "Creed",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "notes": ["Bergamot", "Blackcurrant", "Pineapple"],
-        "gender": "Male",
-        "price": "$435",
-        "rating": 4.9,
-        "reviews": 1673,
-        "discount": 30
-    },
-    {
-        "id": 11,
-        "name": "Hermès Terre d’Hermès",
-        "brand": "Hermès",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "notes": ["Orange", "Pepper", "Vetiver"],
-        "gender": "Male",
-        "price": "$125",
-        "rating": 4.7,
-        "reviews": 923,
-        "discount": 15
-    },
-    {
-        "id": 12,
-        "name": "Paco Rabanne 1 Million Eau de Toilette",
-        "brand": "Paco Rabanne",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "notes": ["Cinnamon", "Leather", "Amber"],
-        "gender": "Male",
-        "price": "$95",
-        "rating": 4.6,
-        "reviews": 754,
-        "discount": 10
-    },
-    {
-        "id": 13,
-        "name": "Marc Jacobs Daisy Eau de Toilette",
-        "brand": "Marc Jacobs",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "notes": ["Strawberry", "Violet", "Vanilla"],
-        "gender": "Female",
-        "price": "$105",
-        "rating": 4.8,
-        "reviews": 849,
-        "discount": 20
-    },
-    {
-        "id": 14,
-        "name": "Lancome La Vie Est Belle",
-        "brand": "Lancome",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "notes": ["Vanilla", "Jasmine", "Iris"],
-        "gender": "Female",
-        "price": "$125",
-        "rating": 4.9,
-        "reviews": 1123,
-        "discount": 25
-    },
-    {
-        "id": 15,
-        "name": "Byredo Mojave Ghost Eau de Parfum",
-        "brand": "Byredo",
-        "imageLight": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "imageDark": "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "notes": ["Ambrette", "Magnolia", "Ambergris"],
-        "gender": "Unisex",
-        "price": "$190",
-        "rating": 4.7,
-        "reviews": 504,
-        "discount": 10
     }
 ];
-
-
 
 function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
@@ -368,7 +288,7 @@ export default function ProductsFiltering() {
 
                 <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+                        <h2 className="text-4xl font-bold tracking-tight text-gray-900">Products</h2>
 
                         <div className="flex items-center">
                             <Menu as="div" className="relative inline-block text-left">
@@ -503,7 +423,7 @@ export default function ProductsFiltering() {
                                                         />
                                                     </a>
                                                 </div>
-
+                                                {/* Products Grid */}
                                                 <div className="pt-6">
                                                     <div className="mb-4 flex items-center justify-between gap-4">
                                                         {perfume.discount ? (
@@ -580,8 +500,11 @@ export default function ProductsFiltering() {
                                                         <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
                                                             ({perfume.reviews})
                                                         </p>
-                                                    </div>
 
+
+                                                    </div>
+                                                    {/* Price */}
+                                                    <p className="mt-2 text-gray-700">Price: {perfume.price}</p>
                                                     {/* Add to Cart Button */}
                                                     <div className="mt-4">
                                                         <button className="w-full rounded-md bg-[#f68cba] py-2 text-white hover:bg-[#e678a6]">

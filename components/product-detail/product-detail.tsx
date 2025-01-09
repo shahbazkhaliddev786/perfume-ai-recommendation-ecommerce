@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function ProductDetail() {
   const [mainImage, setMainImage] = useState(
-    "https://media.istockphoto.com/id/1962238685/photo/beautiful-woman-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=A4qCPC6h0CQ_PMZfFGuBKlbuC8-9gHgBaHXWcKteGdc="
+    "/1.jpg"
   );
 
   const changeImage = (src:any) => {
@@ -24,10 +24,10 @@ export default function ProductDetail() {
             />
             <div className="flex gap-4 py-4 justify-center overflow-x-auto">
               {[
-                "https://media.istockphoto.com/id/1962238685/photo/beautiful-woman-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=A4qCPC6h0CQ_PMZfFGuBKlbuC8-9gHgBaHXWcKteGdc=",
-                "https://media.istockphoto.com/id/2149954181/photo/three-luxury-perfume-bottles.webp?a=1&b=1&s=612x612&w=0&k=20&c=5gilsvwRksAj90KATyWzKgHalog9cfaZScJJl-24ch8=",
-                "https://media.istockphoto.com/id/1550413996/photo/woman-testing-perfume-by-sniffing.webp?a=1&b=1&s=612x612&w=0&k=20&c=A4EWcJF_rGT-lcQte1Ghk_q-dNQNwJFsBduraMNrymQ=",
-                "https://media.istockphoto.com/id/1772604575/photo/fragrance-spray-man-and-perfume-applying-cologne-scent-water-skin-care-beauty-product-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=5FIidS40BeICkG0swLERiQ2N47iD33eGIevjHKkeJnM=",
+                "/2.jpg",
+                "/3.jpg",
+                "/4.jpg",
+                "/5.jpg",
               ].map((src, index) => (
                 <img
                   key={index}
@@ -42,7 +42,7 @@ export default function ProductDetail() {
 
           {/* Product Details */}
           <div className="w-full md:w-1/2 px-4">
-            <h2 className="text-3xl font-bold mb-2">Premium Perfume</h2>
+            <h2 className="text-3xl font-bold mb-2">Ambassador</h2>
             <p className="text-gray-600 mb-4">SKU: WH1000XM4</p>
             <div className="mb-4">
               <span className="text-2xl font-bold mr-2">$349.99</span>
@@ -69,8 +69,7 @@ export default function ProductDetail() {
               <span className="ml-2 text-gray-600">4.5 (120 reviews)</span>
             </div>
             <p className="text-gray-700 mb-6">
-              Experience premium quality and industry-leading perfumes.
-               Perfect for music lovers and frequent travelers.
+            Introducing Ambassador a captivating fragrance that exudes freshness, warmth, and allure. With its blend of woody notes and seductive undertones, this scent invites you to embark on a journey of sophistication and charm. Experience the timeless allure of Ambassador, a scent crafted to captivate and enchant anyone who encounters it.
             </p>
 
             <div className="mb-6">

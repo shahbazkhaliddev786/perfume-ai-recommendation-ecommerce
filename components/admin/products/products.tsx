@@ -96,7 +96,7 @@ export default function ProductList() {
       {/* Add Product Button */}
       <button
         onClick={handleCreateNewProduct}
-        className="bg-green-500 text-white px-4 py-2 rounded"
+        className="bg-[#f68cba] text-white px-4 py-2 rounded"
       >
         Create New Product
       </button>
@@ -136,7 +136,7 @@ export default function ProductList() {
             <div className="mt-4 flex justify-between gap-2">
               <button
                 onClick={() => handleEdit(product)}
-                className="bg-blue-500 text-white px-4 py-2 rounded"
+                className="bg-[#f68cba] text-white px-4 py-2 rounded"
               >
                 Edit
               </button>

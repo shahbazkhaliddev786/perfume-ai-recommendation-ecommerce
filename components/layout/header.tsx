@@ -29,13 +29,13 @@ const navigation = {
         {
           name: 'New Perfume Arrivals',
           href: '#',
-          imageSrc: 'https://example.com/perfume-women-new-arrivals.jpg',
+          imageSrc: '/3.jpg',
           imageAlt: 'Newly launched women perfumes.',
         },
         {
           name: 'Best Sellers',
           href: '#',
-          imageSrc: 'https://example.com/perfume-women-best-sellers.jpg',
+          imageSrc: '/4.jpg',
           imageAlt: 'Top-selling perfumes for women.',
         },
       ],
@@ -61,17 +61,7 @@ const navigation = {
             { name: 'Tom Ford', href: '#' },
             { name: 'Yves Saint Laurent', href: '#' },
           ],
-        },
-        // {
-        //   id: 'luxury',
-        //   name: 'Luxury Perfumes',
-        //   items: [
-        //     { name: 'Creed', href: '#' },
-        //     { name: 'Jo Malone', href: '#' },
-        //     { name: 'Byredo', href: '#' },
-        //     { name: 'Clive Christian', href: '#' },
-        //   ],
-        // },
+        }
       ],
     },
     {
@@ -81,13 +71,13 @@ const navigation = {
         {
           name: 'New Perfume Arrivals',
           href: '#',
-          imageSrc: 'https://example.com/perfume-men-new-arrivals.jpg',
+          imageSrc: '/1.jpg',
           imageAlt: 'Newly launched men perfumes.',
         },
         {
           name: 'Best Sellers',
           href: '#',
-          imageSrc: 'https://example.com/perfume-men-best-sellers.jpg',
+          imageSrc: '/2.jpg',
           imageAlt: 'Top-selling perfumes for men.',
         },
       ],
@@ -111,17 +101,7 @@ const navigation = {
             { name: 'Dolce & Gabbana', href: '#' },
             { name: 'Creed', href: '#' },
           ],
-        },
-        // {
-        //   id: 'luxury',
-        //   name: 'Luxury Perfumes',
-        //   items: [
-        //     { name: 'Tom Ford', href: '#' },
-        //     { name: 'Creed', href: '#' },
-        //     { name: 'Amouage', href: '#' },
-        //     { name: 'Clive Christian', href: '#' },
-        //   ],
-        // },
+        }
       ],
     },
   ],
@@ -266,8 +246,8 @@ export default function Header() {
                   <span className="sr-only text-gray-700">Perfume AI</span>
                   <img
                     alt=""
-                    src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                    className="h-8 w-auto"
+                    src="/logo.png"
+                    className="h-12 w-auto"
                   />
                 </Link>
               </div>

@@ -290,7 +290,7 @@ export default function Checkout() {
                                     </div>
 
                                     <div className="sm:col-span-2">
-                                        <button type="submit" className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-400 dark:focus:ring-gray-700">
+                                        <button type="submit" className="bg-[#f68cba] text-white hover:bg-[#e678a6] flex w-full items-center justify-center gap-2 rounded-lg  px-5 py-2.5 text-sm font-medium focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100">
                                             <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
                                             </svg>
@@ -418,7 +418,7 @@ export default function Checkout() {
                                 <label className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400"> Enter a gift card, voucher or promotional code </label>
                                 <div className="flex max-w-md items-center gap-4">
                                     <input type="text" id="voucher" className="block w-full rounded-lg border border-gray-300  p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 bg-white dark:text-gray-400 dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="" required />
-                                    <button type="button" className="flex items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-gray-600 hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Apply</button>
+                                    <button type="button" className="bg-[#f68cba] text-white hover:bg-[#e678a6] flex items-center justify-center rounded-lg px-5 py-2.5 text-sm font-medium focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800">Apply</button>
                                 </div>
                             </div>
                         </div>
@@ -454,7 +454,7 @@ export default function Checkout() {
                             </div>
 
                             <div className="space-y-3">
-                                <button type="submit" className="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-gray-600 hover:bg-primary-800 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Proceed to Payment</button>
+                                <button type="submit" className="bg-[#f68cba] text-white hover:bg-[#e678a6] flex w-full items-center justify-center rounded-lg px-5 py-2.5 text-sm font-medium focus:outline-none focus:ring-4  focus:ring-primary-300 dark:focus:ring-primary-800">Proceed to Payment</button>
 
                                 <p className="text-sm font-normal text-gray-500 dark:text-gray-400">One or more items in your cart require an account. <a href="#" title="" className="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Sign in or create an account now.</a>.</p>
                             </div>
