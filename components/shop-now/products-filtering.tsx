@@ -24,13 +24,7 @@ const sortOptions = [
     { name: 'Price: Low to High', href: '#', current: false },
     { name: 'Price: High to Low', href: '#', current: false },
 ]
-const subCategories = [
-    { name: 'Casual Perfume', href: '#' },
-    { name: 'Party Perfume', href: '#' },
-    { name: 'Travel Perfume', href: '#' },
-    { name: 'Luxury Perfume', href: '#' },
-    { name: 'Office Perfume', href: '#' },
-]
+
 
 const filters = [
     {
@@ -307,15 +301,7 @@ export default function ProductsFiltering() {
                             {/* Filters */}
                             <form className="mt-4 border-t border-gray-200">
                                 <h3 className="sr-only">Categories</h3>
-                                <ul role="list" className="px-2 py-3 font-medium text-gray-900">
-                                    {subCategories.map((category) => (
-                                        <li key={category.name}>
-                                            <a href={category.href} className="block px-2 py-3">
-                                                {category.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
+
 
                                 {filters.map((section) => (
                                     <Disclosure key={section.id} as="div" className="border-t border-gray-200 px-4 py-6">
@@ -442,13 +428,7 @@ export default function ProductsFiltering() {
                             {/* Filters */}
                             <form className="hidden lg:block">
                                 <h3 className="sr-only">Categories</h3>
-                                <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
-                                    {subCategories.map((category) => (
-                                        <li key={category.name}>
-                                            <a href={category.href}>{category.name}</a>
-                                        </li>
-                                    ))}
-                                </ul>
+
 
                                 {filters.map((section) => (
                                     <Disclosure key={section.id} as="div" className="border-b border-gray-200 py-6">
@@ -508,111 +488,113 @@ export default function ProductsFiltering() {
                                 ))}
                             </form>
 
-                            {/* Product grid */}
+
                             <div className="lg:col-span-3">
                                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                                     {perfumes.map((perfume) => (
-                                      <Link href="/product-detail">
-                                        <div
-                                            key={perfume.id}
-                                            className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm"
-                                        >
-                                            <div className="h-56 w-full">
-                                                <a href="#">
-                                                    <img
-                                                        className="mx-auto h-full"
-                                                        src={perfume.imageLight} // Use imageLight or imageDark here
-                                                        alt={perfume.name}
-                                                    />
-                                                </a>
-                                            </div>
+                                        <Link href="/product-detail" key={perfume.id}>
+                                            <div className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
+                                                <div className="h-56 w-full">
+                                                    <a href="#">
+                                                        <img
+                                                            className="mx-auto h-full"
+                                                            src={perfume.imageLight} // Use imageLight or imageDark here
+                                                            alt={perfume.name}
+                                                        />
+                                                    </a>
+                                                </div>
 
-                                            <div className="pt-6">
-                                                <div className="mb-4 flex items-center justify-between gap-4">
-                                                    {perfume.discount ? (
-                                                        <span className="rounded bg-primary-100 text-gray-600 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">
-                                                            {perfume.discount}
-                                                        </span>
-                                                    ) : (
-                                                        <span className="text-gray-600 text-xs">No Discount</span>
-                                                    )}
-                                                    <div className="flex items-center gap-1">
-                                                        <button className="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 ">
-                                                            <span className="sr-only">Quick look</span>
-                                                            <svg
-                                                                className="h-5 w-5"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="24"
-                                                                height="24"
-                                                                fill="none"
-                                                                viewBox="0 0 24 24"
-                                                            >
-                                                                <path
-                                                                    stroke="currentColor"
-                                                                    strokeWidth="2"
-                                                                    d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"
-                                                                />
-                                                                <path
-                                                                    stroke="currentColor"
-                                                                    strokeWidth="2"
-                                                                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                                                                />
-                                                            </svg>
-                                                        </button>
-                                                        <button className="rounded-lg p-2 text-gray-800 hover:bg-gray-100 hover:text-gray-900  dark:hover:bg-gray-700 dark:hover:text-white">
-                                                            <span className="sr-only">Add to Favorites</span>
-                                                            <svg
-                                                                className="h-5 w-5"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                fill="none"
-                                                                viewBox="0 0 24 24"
-                                                            >
-                                                                <path
-                                                                    stroke="currentColor"
-                                                                    strokeLinecap="round"
-                                                                    strokeLinejoin="round"
-                                                                    strokeWidth="2"
-                                                                    d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"
-                                                                />
-                                                            </svg>
+                                                <div className="pt-6">
+                                                    <div className="mb-4 flex items-center justify-between gap-4">
+                                                        {perfume.discount ? (
+                                                            <span className="rounded bg-primary-100 text-gray-600 px-2.5 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300">
+                                                                {perfume.discount}
+                                                            </span>
+                                                        ) : (
+                                                            <span className="text-gray-600 text-xs">No Discount</span>
+                                                        )}
+                                                        <div className="flex items-center gap-1">
+                                                            <button className="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900">
+                                                                <span className="sr-only">Quick look</span>
+                                                                <svg
+                                                                    className="h-5 w-5"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24"
+                                                                    height="24"
+                                                                    fill="none"
+                                                                    viewBox="0 0 24 24"
+                                                                >
+                                                                    <path
+                                                                        stroke="currentColor"
+                                                                        strokeWidth="2"
+                                                                        d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"
+                                                                    />
+                                                                    <path
+                                                                        stroke="currentColor"
+                                                                        strokeWidth="2"
+                                                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                                                    />
+                                                                </svg>
+                                                            </button>
+                                                            <button className="rounded-lg p-2 text-gray-800 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white">
+                                                                <span className="sr-only">Add to Favorites</span>
+                                                                <svg
+                                                                    className="h-5 w-5"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    fill="none"
+                                                                    viewBox="0 0 24 24"
+                                                                >
+                                                                    <path
+                                                                        stroke="currentColor"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                        strokeWidth="2"
+                                                                        d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"
+                                                                    />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline">
+                                                        {perfume.name}
+                                                    </a>
+
+                                                    <div className="mt-2 flex items-center gap-2">
+                                                        <div className="flex items-center">
+                                                            {Array.from({ length: 5 }).map((_, i) => (
+                                                                <svg
+                                                                    key={i}
+                                                                    className={`h-4 w-4 ${i < Math.round(perfume.rating) ? "text-yellow-400" : "text-gray-300"}`}
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    fill="currentColor"
+                                                                    viewBox="0 0 24 24"
+                                                                >
+                                                                    <path d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z" />
+                                                                </svg>
+                                                            ))}
+                                                        </div>
+                                                        <p className="text-sm font-medium text-gray-900 dark:text-white">
+                                                            {perfume.rating}
+                                                        </p>
+                                                        <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
+                                                            ({perfume.reviews})
+                                                        </p>
+                                                    </div>
+
+                                                    {/* Add to Cart Button */}
+                                                    <div className="mt-4">
+                                                        <button className="w-full rounded-md bg-[#f68cba] py-2 text-white hover:bg-[#e678a6]">
+                                                            Add to Cart
                                                         </button>
                                                     </div>
                                                 </div>
-
-                                                <a href="#" className="text-lg font-semibold leading-tight text-gray-900 hover:underline ">
-                                                    {perfume.name}
-                                                </a>
-
-                                                <div className="mt-2 flex items-center gap-2">
-                                                    <div className="flex items-center">
-                                                        {Array.from({ length: 5 }).map((_, i) => (
-                                                            <svg
-                                                                key={i}
-                                                                className={`h-4 w-4 ${i < Math.round(perfume.rating)
-                                                                        ? "text-yellow-400"
-                                                                        : "text-gray-300"
-                                                                    }`}
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                fill="currentColor"
-                                                                viewBox="0 0 24 24"
-                                                            >
-                                                                <path d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z" />
-                                                            </svg>
-                                                        ))}
-                                                    </div>
-                                                    <p className="text-sm font-medium text-gray-900 dark:text-white">
-                                                        {perfume.rating}
-                                                    </p>
-                                                    <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                                                        ({perfume.reviews})
-                                                    </p>
-                                                </div>
                                             </div>
-                                        </div>
-                                      </Link>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
+
                         </div>
                     </section>
                 </main>

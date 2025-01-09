@@ -62,16 +62,16 @@ const navigation = {
             { name: 'Yves Saint Laurent', href: '#' },
           ],
         },
-        {
-          id: 'luxury',
-          name: 'Luxury Perfumes',
-          items: [
-            { name: 'Creed', href: '#' },
-            { name: 'Jo Malone', href: '#' },
-            { name: 'Byredo', href: '#' },
-            { name: 'Clive Christian', href: '#' },
-          ],
-        },
+        // {
+        //   id: 'luxury',
+        //   name: 'Luxury Perfumes',
+        //   items: [
+        //     { name: 'Creed', href: '#' },
+        //     { name: 'Jo Malone', href: '#' },
+        //     { name: 'Byredo', href: '#' },
+        //     { name: 'Clive Christian', href: '#' },
+        //   ],
+        // },
       ],
     },
     {
@@ -112,16 +112,16 @@ const navigation = {
             { name: 'Creed', href: '#' },
           ],
         },
-        {
-          id: 'luxury',
-          name: 'Luxury Perfumes',
-          items: [
-            { name: 'Tom Ford', href: '#' },
-            { name: 'Creed', href: '#' },
-            { name: 'Amouage', href: '#' },
-            { name: 'Clive Christian', href: '#' },
-          ],
-        },
+        // {
+        //   id: 'luxury',
+        //   name: 'Luxury Perfumes',
+        //   items: [
+        //     { name: 'Tom Ford', href: '#' },
+        //     { name: 'Creed', href: '#' },
+        //     { name: 'Amouage', href: '#' },
+        //     { name: 'Clive Christian', href: '#' },
+        //   ],
+        // },
       ],
     },
   ],
