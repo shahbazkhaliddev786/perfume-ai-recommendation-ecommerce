@@ -4,11 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const sidebarLinks = [
-  { href: '/moderators/products', label: 'Products' },
-  { href: '/moderators/orders', label: 'Orders' },
+  { href: '/user/profile', label: 'Profile' },
+  { href: '/user/orders', label: 'Orders' },
 ];
 
-export default function ModeratorLayout({children}:{children:React.ReactNode}) {
+export default function UserLayout({children}:{children:React.ReactNode}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
