@@ -57,7 +57,7 @@ export default function SigninPage() {
                                 <div>
                                     <button
                                         type="submit"
-                                        className="flex w-full justify-center rounded-md bg-[#f68cba] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-[#e3aadd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                        className="flex w-full justify-center rounded-md text-white bg-gradient-to-r from-purple-500 to-red-500 shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300 px-3 py-1.5 text-sm/6 font-semibold  hover:bg-[#e3aadd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                     >
                                         Sign in
                                     </button>

@@ -4,7 +4,7 @@ export default function SignupPage() {
     return (
         <>
             <MainLayout>
-                <section className="bg-gray-50 ">
+                <section >
                     <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
 
                         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-600 dark:border-gray-700">
@@ -33,7 +33,12 @@ export default function SignupPage() {
                                             <label className="font-light text-gray-500 dark:text-gray-300">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
                                         </div>
                                     </div>
-                                    <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-[#f68cba] hover:bg-[#e3aadd]">Create an account</button>
+                                    <button
+                                        type="submit"
+                                        className="flex w-full justify-center rounded-md text-white bg-gradient-to-r from-purple-500 to-red-500 shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300 px-3 py-1.5 text-sm/6 font-semibold  hover:bg-[#e3aadd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    >
+                                        Sign Up
+                                    </button>
                                     <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                         Already have an account? <a href="/auth/signin" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
                                     </p>

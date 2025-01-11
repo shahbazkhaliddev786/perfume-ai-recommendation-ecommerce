@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const footerData = {
   brand: {
-    name: "Perfume AI",
+    name: "Scenter",
     link: "/",
   },
   links: [
@@ -10,7 +10,7 @@ const footerData = {
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Shop Now", href: "/shop-now" },
     { name: "Contact", href: "/contact" },
-    { name: "Community", href: "/community" },
+    
   ]
 };
 

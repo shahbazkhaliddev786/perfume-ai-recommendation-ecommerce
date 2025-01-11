@@ -5,11 +5,8 @@ export default function Hero() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const images = [
-        "https://images.pexels.com/photos/3059609/pexels-photo-3059609.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/3059609/pexels-photo-3059609.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "https://images.pexels.com/photos/3059609/pexels-photo-3059609.jpeg?auto=compress&cs=tinysrgb&w=400"
+        "/slide.png",
+        "/slide-2.png"
     ];
 
     const nextSlide = () => {
@@ -25,11 +22,11 @@ export default function Hero() {
     return (
         <section className="p-6">
             <div id="controls-carousel" className="relative w-full">
-                <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
                     {images.map((image, index) => (
                         <div
                             key={index}
-                            className={`absolute w-full transition-opacity duration-700 ease-in-out ${
+                            className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${
                                 index === activeIndex
                                     ? "opacity-100"
                                     : "opacity-0"
@@ -37,7 +34,7 @@ export default function Hero() {
                         >
                             <img
                                 src={image}
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                className="w-full h-full object-cover"
                                 alt={`Slide ${index}`}
                             />
                         </div>
@@ -53,7 +50,7 @@ export default function Hero() {
                 >
                     <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg
-                            className="w-4 h-4 text-white  rtl:rotate-180"
+                            className="w-4 h-4 text-white rtl:rotate-180"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -80,7 +77,7 @@ export default function Hero() {
                 >
                     <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg
-                            className="w-4 h-4 text-white  rtl:rotate-180"
+                            className="w-4 h-4 text-white rtl:rotate-180"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"

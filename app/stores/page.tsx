@@ -7,6 +7,14 @@ export default function StoresPage() {
     { id: 2, name: "Fashion Fiesta" },
     { id: 3, name: "Gadget Galaxy" },
     { id: 4, name: "Home Essentials" },
+    { id: 5, name: "Book World" },
+    { id: 6, name: "Fitness Gear" },
+    { id: 7, name: "Toy Treasure" },
+    { id: 8, name: "Pet Paradise" },
+    { id: 9, name: "Music Mania" },
+    { id: 10, name: "Artistic Vibes" },
+    { id: 11, name: "Outdoor Oasis" },
+    { id: 12, name: "Kitchen Delights" },
   ];
 
   return (
@@ -22,7 +30,7 @@ export default function StoresPage() {
               <h3 className="text-lg font-semibold mb-4">{store.name}</h3>
               <Link
                 href="/shop-now"
-                className="bg-[#f68cba] py-2 px-4 text-white rounded hover:bg-[#e678a6]"
+                className=" py-2 px-4 text-white bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300"
               >
                 Shop Now
               </Link>

@@ -178,7 +178,7 @@ export default function Cart() {
 
                             <div className="mt-6 space-y-3">
                                 <Link href='/checkout'>
-                                    <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-[#f68cba] hover:bg-[#d3b8b7] text-white rounded-md">Checkout</button>
+                                    <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide text-white bg-gradient-to-r from-purple-500 to-red-500 shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-md">Checkout</button>
                                 </Link>
                                 <Link href='/shop-now'>
                                     <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-transparent text-gray-800 border border-gray-300 rounded-md">Continue Shopping  </button>

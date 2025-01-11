@@ -507,7 +507,7 @@ export default function ProductsFiltering() {
                                                     <p className="mt-2 text-gray-700">Price: {perfume.price}</p>
                                                     {/* Add to Cart Button */}
                                                     <div className="mt-4">
-                                                        <button className="w-full rounded-md bg-[#f68cba] py-2 text-white hover:bg-[#e678a6]">
+                                                        <button className="w-full rounded-md py-2 text-white bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300">
                                                             Add to Cart
                                                         </button>
                                                     </div>

@@ -12,7 +12,7 @@ export default function ProductDetail() {
   };
 
   return (
-    <section className="bg-gray-100">
+    <section className="bg-white">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-wrap -mx-4">
           {/* Product Images */}
@@ -71,7 +71,13 @@ export default function ProductDetail() {
             <p className="text-gray-700 mb-6">
             Introducing Ambassador a captivating fragrance that exudes freshness, warmth, and allure. With its blend of woody notes and seductive undertones, this scent invites you to embark on a journey of sophistication and charm. Experience the timeless allure of Ambassador, a scent crafted to captivate and enchant anyone who encounters it.
             </p>
-
+            <button
+                  className="mt-4 w-full py-2 text-white bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300"
+                  type="button"
+                >
+                  Add to Cart
+                </button>
+{/* 
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Color:</h3>
               <div className="flex space-x-2">
@@ -79,7 +85,7 @@ export default function ProductDetail() {
                 <button className="w-8 h-8 bg-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"></button>
                 <button className="w-8 h-8 bg-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"></button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

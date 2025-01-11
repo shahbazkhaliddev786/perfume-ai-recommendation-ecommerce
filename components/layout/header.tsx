@@ -108,6 +108,7 @@ const navigation = {
   pages: [
     { name: 'Shop Now', href: '/shop-now' },
     { name: 'Stores', href: '/stores' },
+    { name: "Community", href: "/community" }
   ],
 }
 
@@ -246,7 +247,7 @@ export default function Header() {
                   <span className="sr-only text-gray-700">Perfume AI</span>
                   <img
                     alt=""
-                    src="/logo.png"
+                    src="/log1.png"
                     className="h-12 w-auto"
                   />
                 </Link>

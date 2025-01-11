@@ -85,7 +85,7 @@ const Featured: React.FC = () => {
                 </div>
                 <p className="text-lg font-medium text-gray-800 mt-2">{card.price}</p>
                 <button
-                  className="mt-4 w-full rounded bg-[#f68cba] py-2 text-white hover:bg-[#e678a6]"
+                  className="mt-4 w-full rounded py-2 text-white bg-gradient-to-r from-purple-500 to-red-500 shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300"
                   type="button"
                 >
                   Add to Cart

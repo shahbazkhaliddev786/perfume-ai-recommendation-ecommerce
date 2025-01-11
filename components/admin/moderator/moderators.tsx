@@ -72,7 +72,7 @@ export default function ModeratorList() {
       {/* Add Moderator Button */}
       <button
         onClick={handleCreateNewModerator}
-        className="bg-[#f68cba] text-white px-4 py-2 rounded"
+        className="text-white bg-gradient-to-r from-purple-500 to-red-500 shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300 px-4 py-2 rounded"
       >
         Create New Moderator
       </button>
@@ -93,7 +93,7 @@ export default function ModeratorList() {
                 <td className="border border-gray-300 px-4 py-2 flex gap-2">
                   <button
                     onClick={() => handleEdit(moderator)}
-                    className="bg-[#f68cba] text-white px-4 py-2 rounded"
+                    className="text-white bg-gradient-to-r from-purple-500 to-red-500 shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300 px-4 py-2 rounded"
                   >
                     Edit
                   </button>
