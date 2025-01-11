@@ -5,7 +5,7 @@ export default function CommunityPage(){
     return  (
         <>
         <MainLayout>
-        <Community />
+            <Community />
         </MainLayout>
         </>
     )
