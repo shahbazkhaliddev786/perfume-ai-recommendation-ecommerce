@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Perfume AI",
+  title: "Scent Mania",
   description: "This is first personalized ai perfume recommendations brand.",
 };
 
