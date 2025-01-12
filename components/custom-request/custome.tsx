@@ -87,7 +87,7 @@ export default function CustomRecommendations() {
               id="age"
               className="mt-2 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500"
             >
-              <option value="eau-de-toilet">Eau de toilet</option>
+              <option value="eau-de-toilet">Eau de toilette</option>
               <option value="eau-de-parfum">Eau de parfum</option>
               <option value="parfum">Parfum</option>
               <option value="extrait-de-parfum">Extrait de parfum</option>
