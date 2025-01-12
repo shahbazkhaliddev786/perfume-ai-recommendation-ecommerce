@@ -14,7 +14,7 @@ const AboutPage = () => {
               Our Passion for Luxury Perfumes
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              At <span className="font-bold">Perfume Elegance</span>, we celebrate the art of fragrance, offering a curated
+              At <span className="font-bold">Scents Mania</span>, we celebrate the art of fragrance, offering a curated
               selection of luxury perfumes crafted by world-renowned perfumers. Each scent tells a story, weaving timeless
               notes that evoke memories, emotions, and aspirations. Our commitment is to provide you with an unparalleled
               sensory journey through the world of fine fragrances.

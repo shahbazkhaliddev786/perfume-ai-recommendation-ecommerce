@@ -12,7 +12,7 @@ const PrivacyPolicyPage = () => {
           <section>
             <h2 className="text-2xl font-semibold text-gray-700 mb-4">Introduction</h2>
             <p>
-              Welcome to <span className="font-bold">Perfume Elegance</span>. Your privacy is of utmost importance to us.
+              Welcome to <span className="font-bold">Scents Mania</span>. Your privacy is of utmost importance to us.
               This Privacy Policy outlines how we collect, use, and protect your information when you interact with our
               website and services.
             </p>
@@ -90,7 +90,7 @@ const PrivacyPolicyPage = () => {
             <p>
               If you have any questions or concerns about this Privacy Policy, please contact us at:
             </p>
-            <p className="font-bold">support@perfumeelegance.com</p>
+            <p className="font-bold">support@scents-mania.com</p>
           </section>
         </div>
       </div>

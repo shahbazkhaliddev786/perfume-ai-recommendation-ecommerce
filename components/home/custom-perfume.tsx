@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function CustomPerfumeRequestSection() {
@@ -18,12 +19,14 @@ export default function CustomPerfumeRequestSection() {
       <p className="mt-4 text-base text-gray-600 max-w-xl sm:text-lg lg:text-xl">
         Imagine a fragrance that perfectly captures your personality. Request a custom perfume and let us craft a scent that’s uniquely yours.
       </p>
+      <Link href='/custom-perfume-request'>
       <button
         onClick={handleButtonClick}
         className="mt-8 px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-red-500 rounded-lg shadow-md hover:from-purple-600 hover:to-red-600 focus:outline-none focus:ring-4 focus:ring-purple-300 sm:text-base lg:text-lg lg:px-8 lg:py-4"
       >
         Request Custom Perfume
       </button>
+      </Link>
     </section>
   );
 }

@@ -44,36 +44,17 @@ const perfumeData = [
 export default function CustomRecommendations() {
   const [show, setShow] = useState(false);
   const [field3Selected, setField3Selected] = useState<MultiValue<Option>>([]);
-  const [field4Selected, setField4Selected] = useState<MultiValue<Option>>([]);
 
   const field3Options: Option[] = [
-    { value: "fresh", label: "Fresh" },
-    { value: "woody", label: "Woody" },
-    { value: "floral", label: "Floral" },
-    { value: "oriental", label: "Oriental" },
-    { value: "fruity", label: "Fruity" },
-    { value: "spicy", label: "Spicy" },
-    { value: "aquatic", label: "Aquatic" },
-    { value: "musk", label: "Musk" },
-    { value: "gourmand", label: "Gourmand (Sweet Scents)" },
-    { value: "green", label: "Green (Earthy/Natural)" },
-  ];
+    { value: "chanel", label: "Chanel" },
+    { value: "dior", label: "Dior" },
+    { value: "hugo", label: "Hugo" },
+    { value: "byredo", label: "Byredo" },
 
-  const field4Options: Option[] = [
-    { value: "bold", label: "Bold" },
-    { value: "introvert", label: "Introvert" },
-    { value: "extrovert", label: "Extrovert" },
-    { value: "calm", label: "Calm" },
-    { value: "outgoing", label: "Outgoing" },
-    { value: "professional", label: "Professional" },
-    { value: "romantic", label: "Romantic" },
   ];
 
   const handleField3Change = (selected: MultiValue<Option>) =>
     setField3Selected(selected);
-
-  const handleField4Change = (selected: MultiValue<Option>) =>
-    setField4Selected(selected);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -89,42 +70,35 @@ export default function CustomRecommendations() {
         <form
           className="mt-8 w-full max-w-lg bg-white p-6 rounded-lg shadow-lg"
           onSubmit={handleSubmit}
-        >
+        > 
 
           <div className="mb-4">
             <label className="block text-left text-gray-700 font-medium" htmlFor="age">
-              Age
+              Your desired notes
+            </label>
+            <input className="border w-full p-2 placeholder:px-4" type="text" name="notes" placeholder="Enter your notes"/>
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-left text-gray-700 font-medium" htmlFor="age">
+              Select Concentration
             </label>
             <select
               id="age"
               className="mt-2 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500"
             >
-              <option value="16-25">16-25</option>
-              <option value="26-35">26-35</option>
-              <option value="36-50">36-50</option>
-              <option value="50-65">50-65</option>
+              <option value="eau-de-toilet">Eau de toilet</option>
+              <option value="eau-de-parfum">Eau de parfum</option>
+              <option value="parfum">Parfum</option>
+              <option value="extrait-de-parfum">Extrait de parfum</option>
             </select>
           </div>
 
-          <div className="mb-4">
-            <label className="block text-left text-gray-700 font-medium" htmlFor="gender">
-              Gender
-            </label>
-            <select
-              id="gender"
-              className="mt-2 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500"
-            >
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="female">Unisex</option>
-
-            </select>
-          </div>
 
           {/* Field 3 */}
           <div className="mb-4">
             <label htmlFor="field3" className="text-left block mb-2 font-medium">
-              Preferred Fragrance Types
+              Select Brand
             </label>
             <Select
               id="field3"
@@ -135,39 +109,6 @@ export default function CustomRecommendations() {
               placeholder="Select fragrance types"
               className="w-full"
             />
-          </div>
-
-          {/* Field 4 */}
-          <div className="mb-4">
-            <label htmlFor="field4" className="text-left block mb-2 font-medium">
-              Personality Type
-            </label>
-            <Select
-              id="field4"
-              isMulti
-              options={field4Options}
-              value={field4Selected}
-              onChange={handleField4Change}
-              placeholder="Select personality types"
-              className="w-full"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-left text-gray-700 font-medium" htmlFor="event-type">
-              Event Type
-            </label>
-            <select
-              id="event-type"
-              className="mt-2 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-500"
-            >
-              <option value="casual">Casual</option>
-              <option value="office">Office/Work</option>
-              <option value="date">Date</option>
-              <option value="party">Party</option>
-              <option value="outdoor">Outdoor/Sports</option>
-              <option value="formal">Formal Event</option>
-            </select>
           </div>
 
           <button
